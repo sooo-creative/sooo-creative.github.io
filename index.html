@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <!-- 서체 -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- css 파일 -->
+    <link href="./css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- 네비게이션 -->
+    <nav>
+        <div class="logo">Portfolio</Portal></div>
+        <ul>
+            <li><a href="#">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 헤더 -->
+    <header>
+        <h1>SELECTED<br>WORKS</h1>
+    </header>
+
+    <!-- 갤러리 -->
+    <main class="gallery" id="#">
+        <!-- 아이템 1 -->
+        <div class="gallery-item" data-title="MONO FRAME" data-desc="Cafe Branding MONOFRAME"
+        data-images="./images/monoframe/monoframe.jpg , ./images/monoframe/cup-holder.jpg ,
+        ./images/monoframe/cafe-poster.jpg , ./images/monoframe/coffee-cup-mockup1.jpg , ./images/monoframe/coffee-cup-mockup2.jpg"
+        data-detail="이 프로젝트는 가상의 카페 브랜딩을 위하여 제작되었습니다.<br>
+        사용 툴 : <b>포토샵 / 일러스트레이터</b>
+        <br>
+        작품 기여도 : 100%">
+            <div class="img-box">
+                <img src="./images/monoframe/coffee-cup-mockup2.jpg" alt="Work 1">
+            </div>
+            <div class="item-info">
+                <span>01. Branding - monoframe</span>
+                <span>2026</span>
+            </div>
+        </div>
+
+        <!-- 아이템 2 -->
+        <div class="gallery-item" data-title="Firefly Poster" data-desc="2025 Firefly Poster"
+        data-images="./images/firefly-poster/poster-01.jpg , ./images/firefly-poster/gallery-mockup.jpg ,
+        ./images/firefly-poster/apple.jpg , ./images/firefly-poster/banana.jpg , ./images/firefly-poster/grape.jpg"
+        data-detail="이 프로젝트는 포토샵 파이어플라이 (AI)를 이용하여 제작되었습니다.<br>
+        사용 툴 : <b>포토샵 / 파이어플라이 (AI)</b>
+        <br>
+        작품 기여도 : 100%">
+            <div class="img-box">
+                <img src="./images/firefly-poster/poster-01.jpg" alt="Work 2">
+            </div>
+            <div class="item-info">
+                <span>02. Poster</span>
+                <span>2025</span>
+            </div>
+        </div>
+
+        <!-- 아이템 3 -->
+        <div class="gallery-item" data-title="Subway Poster" data-desc="2025 Subway Billboard Design"
+        data-images="./images/blueprint/Subway-Billboard-Mockup_1.jpg, ./images/blueprint/Subway-Billboard-Mockup_2.jpg,
+        ./images/blueprint/key-chain.jpg , ./images/blueprint/purfume.jpg"
+        data-detail="이 프로젝트는 블루프린트 기법을 이용하여 지하철 광고 컨셉으로 제작되었습니다.<br>
+        사용 툴 : <b>일러스트레이터 / 포토샵 / 블렌더</b>
+        <br>
+        작품 기여도 : 100%">
+            <div class="img-box">
+                <img src="./images/blueprint/Subway-Billboard-Mockup_1.jpg" alt="Work 3">
+            </div>
+            <div class="item-info">
+                <span>03. Subway Poster</span>
+                <span>2025</span>
+            </div>
+        </div>
+
+        <!-- 아이템 4 
+        <div class="gallery-item" data-title="PROJECT FOUR" data-desc="Minimalist approach to web interface design.">
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&q=80&w=1000" alt="Work 4">
+            </div>
+            <div class="item-info">
+                <span>04. UI/UX Design</span>
+                <span>2023</span>
+            </div>
+        </div> -->
+    </main>
+
+     <!-- 어바웃 섹션 -->
+    <section id="about">
+        <div class="about-container">
+            <span class="label">ABOUT</span>
+            <p class="main-bio">
+                Hi, I'm Sooo<br>
+                Web designer and publisher who pursues the aesthetics of simplicity.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+            <div class="contact-container">
+                    <span class="label">CONTACT</span>
+                    <p class="main-bio">
+                        <a href="mailto:example@gmail.com">hello@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- 모달 -->
+    <div class="modal" id="pjModal">
+    <div class="close-modal">X</div>
+        
+        <div class="modal-content">
+            <div class="modal-text">
+                <h2 id="modalTitle">PROJECT NAME</h2>
+                <p id="modalDesc" style="font-weight: bold; color: #555; margin-bottom: 20px;"></p> <!-- 짧은 요약 -->
+                <p id="modalDetail" style="margin-bottom: 20px;"></p> <!-- 상세 긴 내용 -->
+            </div>
+        <!-- 이미지가 여러 장 들어갈 공간 -->
+        <div id="modalImgContainer"></div>
+    </div>
+</div>
+
+    <script src="./js/js.js"></script>
+</body>
+</html>
